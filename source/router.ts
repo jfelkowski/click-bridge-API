@@ -4,6 +4,10 @@ const router = Router();
 
 router.get('/search', (req, res) => {
   
-  res.json({message: 'Success'});
+  res.json({message: 'SUCCESS!!!'});
+
+  
 
 });
+
+export default router;
