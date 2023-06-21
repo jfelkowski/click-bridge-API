@@ -13,7 +13,7 @@ datasource db {
 model Clickstream {
   id               String   @id @default(uuid())
   createdAt        DateTime @default(now())
-  article          String
+  article          String   @db.VarChar(255)
   referral_article String
   count            Int
   type             String
