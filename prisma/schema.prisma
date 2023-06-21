@@ -11,13 +11,12 @@ datasource db {
 }
 
 model Clickstream {
-  id          String   @id @default(uuid())
-  createdAt   DateTime @default(now())
-  article String 
+  id               String   @id @default(uuid())
+  createdAt        DateTime @default(now())
+  article          String
   referral_article String
-  count Int
-  type String
-  year 
-  month 
+  count            Int
+  type             String
+  month            String
+  year             String
 }
-
