@@ -3,6 +3,9 @@ import router from './router';
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
 app.get('/', (req, res) => {
   console.log('TEST');
   res.status(200);
@@ -10,5 +13,13 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api', router);
+
+app.use((err, req, res, next) => {
+  if (err.type === 'input') {
+    res.status(400).json({message: 'Error: invalid input'});
+  } else {
+    res.status(500).json({message: 'Error: something went wrong'})
+  }
+}); 
 
 export default app;
