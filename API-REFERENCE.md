@@ -13,8 +13,8 @@
 
 ### **Search**
 
-  - ClickBridge provides a search box to query the dataset by article title. This is where a user enters the title of a Wikipedia article. After clicking submit, resulting data is listed below.
+  - ClickBridge provides a search box to query the dataset. This is where a user enters the title of a Wikipedia article. After clicking submit, resulting data is listed below.
  
-    - **GET** /search
+    - **GET** /api/search
       - Returns a list of results for the specific article title searched. The list is sorted by count (highest first, limit: 30), returning associated data in four categories (count, current article, previous article, type).
 
