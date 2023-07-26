@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node source/index.ts"
+    "dev": "ts-node source/index.ts",
+    "seed-data": "ts-node scripts/seed_data.ts"
   },
   "repository": {
     "type": "git",
