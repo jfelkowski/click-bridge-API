@@ -1,6 +1,6 @@
 import prisma from "../db";
 
-export const testAddData = async (req, res, next) => {
+export const testAddDataHandler = async (req, res, next) => {
   try {
     const testAddData = await prisma.clickstream.create({
       data: {

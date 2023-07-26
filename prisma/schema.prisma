@@ -15,7 +15,7 @@ model Clickstream {
   createdAt        DateTime @default(now())
   article          String   @db.VarChar(255)
   referral_article String
-  count            Int
+  count            Int      
   type             String
   month            String
   year             String
